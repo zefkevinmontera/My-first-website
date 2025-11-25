@@ -1,0 +1,229 @@
+/* ===== STYLES ===== */
+body {
+    font-family: 'Arial', sans-serif;                    /* Clean, readable font */
+    background-image: url('https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77700453824.jpg');
+    background-repeat: no-repeat;                        /* No repeating background */
+    background-size: cover;                              /* Cover entire viewport */
+    margin: 0;                                           /* Remove default margin */
+    padding: 0;                                          /* Remove default padding */
+}
+
+/* ===== NAVIGATION BAR ===== */
+.navbar {
+    display: flex;                                       /* Flexbox for horizontal layout */
+    justify-content: space-between;                      /* Space between logo and menu */
+    align-items: center;                                 /* Center items vertically */
+    padding: 1rem 2rem;                                  /* Padding inside navbar */
+    position: fixed;                                     /* Sticks to top when scrolling */
+    width: 100%;                                         /* Full width of viewport */
+    top: 0;                                              /* Position at very top */
+    z-index: 1000;                                       /* Ensures navbar stays above other content */
+    background: rgba(60, 152, 206, 0.575);              /* Semi-transparent blue background */
+}
+
+.logo {
+    font-size: 2rem;                                     /* Logo text size */
+    font-weight: bold;                                   /* Bold logo text */
+    color: rgb(246, 247, 248);                          /* Light blue-white color */
+}
+
+.nav-menu {
+    display: flex;                                       /* Horizontal menu layout */
+    list-style: none;                                    /* Remove bullet points */
+    gap: 4rem;                                          /* Space between menu items */
+    font-size: 1.2rem;                                   /* Menu text size */
+    font-weight: bold;                                   /* Bold menu text */
+    margin-right: 550px;                                 /* Push menu to the right */
+}
+
+.nav-menu a {
+    color: rgb(255, 255, 255);                          /* White text color */
+    text-decoration: none;                               /* Remove underline from links */
+    transition: color 0.3s;                              /* Smooth color transition on hover */
+    padding: 0.5rem 1rem;                                /* Clickable area around links */
+}
+
+.nav-menu a:hover {
+    background: #f8f8f8;                                /* Light background on hover */
+    color: rgba(60, 152, 206, 0.575);                   /* Blue text on hover */
+    border-radius: 5px;                                  /* Rounded corners on hover */
+}
+
+/* ===== MIDDLE SECTION ===== */
+.middle-section {
+    display: flex;                                       /* Flexbox for centering */
+    flex-direction: column;                              /* Stack elements vertically */
+    justify-content: center;                             /* Center vertically */
+    align-items: center;                                 /* Center horizontally */
+    text-align: center;                                  /* Center text alignment */
+    height: 70vh;                                       /* 70% of viewport height */
+    padding: 2rem;                                       /* Padding inside section */
+    margin-top: 80px;                                    /* Space below fixed navbar */
+}
+
+.middle-section h1 {
+    font-size: 5rem;                                     /* Large main heading */
+    color: rgb(255, 255, 255);                          /* White text color */
+    margin-bottom: 1rem;                                 /* Space below heading */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);           /* Text shadow for readability */
+}
+
+.middle-section p {
+    font-size: 2rem;                                     /* Subheading text size */
+    color: rgb(236, 236, 236);                          /* Light gray text */
+    margin-bottom: 2rem;                                 /* Space below paragraph */
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);           /* Subtle text shadow */
+}
+
+/* ===== WONDERS SECTION ===== */
+.wonders-section {
+    padding: 2rem;                                       /* Padding around section */
+    background: rgba(60, 152, 206, 0.575);              /* Semi-transparent blue background */
+    font-weight: bold;                                   /* Bold text throughout section */
+}
+
+.wonders-section h1 {
+    text-align: center;                                  /* Center the section title */
+    font-size: 2.5rem;                                   /* Large section title */
+    color: #fffffffa;                                   /* White text with transparency */
+    margin-bottom: 2rem;                                 /* Space below title */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);           /* Text shadow for contrast */
+}
+
+/* ===== CARDS CONTAINER ===== */
+.cards-container {
+    display: flex;                                       /* Flexbox for card layout */
+    justify-content: center;                             /* Center cards horizontally */
+    gap: 40px;                                          /* Space between cards */
+    padding: 20px;                                       /* Padding around container */
+    flex-wrap: wrap;                                     /* Allow cards to wrap on small screens */
+}
+
+/* ===== INDIVIDUAL CARD STYLING ===== */
+.card-content {
+    padding: 1.5rem;                                     /* Padding inside each card */
+    text-align: center;                                  /* Center card content */
+    background: rgba(214, 200, 200, 0.3);               /* Semi-transparent light background */
+    border-radius: 10px;                                 /* Rounded corners */
+    min-width: 280px;                                    /* Minimum card width */
+    max-width: 350px;                                    /* Maximum card width */
+    margin: 10px;                                        /* Space around cards */
+    display: flex;                                       /* Flexbox for card layout */
+    flex-direction: column;                              /* Stack card elements vertically */
+    align-items: center;                                 /* Center items horizontally */
+    backdrop-filter: blur(100px);                        /* Glass morphism blur effect */
+}
+
+.image {
+    width: 100%;                                         /* Full width of card */
+    height: 200px;                                       /* Fixed image height */
+    object-fit: cover;                                   /* Crop image to fill container */
+    border-radius: 8px;                                  /* Slightly rounded image corners */
+    margin-bottom: 1rem;                                 /* Space below image */
+}
+
+.card-content h2 {
+    color: #fffffdfa;                                   /* White card title */
+    margin-bottom: 1rem;                                 /* Space below title */
+    font-size: 1.5rem;                                   /* Card title size */
+    font-weight: bold;                                   /* Bold card titles */
+}
+
+.card-content p {
+    color: rgb(255, 255, 253);                          /* White card text */
+    margin-bottom: 1rem;                                 /* Space below paragraph */
+    font-size: 1rem;                                     /* Card text size */
+    text-align: center;                                  /* Center card text */
+    font-weight: bold;                                   /* Bold card text */
+    line-height: 1.4;                                    /* Comfortable line spacing */
+}
+
+/* ===== BUTTON STYLING ===== */
+.btn {
+    display: inline-block;                               /* Inline-block for padding/margin */
+    background: rgb(219, 219, 219);                     /* Light gray background */
+    color: rgb(0, 0, 0);                                /* Black text */
+    padding: 10px 25px;                                  /* Comfortable button size */
+    text-decoration: none;                               /* Remove underline from links */
+    border-radius: 5px;                                  /* Rounded button corners */
+    transition: background 0.3s;                         /* Smooth background transition */
+    margin-top: auto;                                    /* Push button to bottom of card */
+    font-size: 1rem;                                     /* Button text size */
+    font-weight: bold;                                   /* Bold button text */
+}
+
+.btn:hover {
+    background: rgba(60, 152, 206, 0.575);              /* Blue background on hover */
+    color: white;                                        /* White text on hover */
+}
+
+/* ===== FORMS SECTION ===== */
+.forms-section {
+    padding: 4rem 2rem;                                  /* Generous padding around section */
+    background: rgba(0, 0, 0, 0.4);                     /* Semi-transparent dark overlay */
+    text-align: center;                                  /* Center section content */
+}
+
+.forms-section h1 {
+    font-size: 2.5rem;                                   /* Large form section title */
+    color: #f3f3f3fa;                                   /* Light gray text */
+    margin-bottom: 3rem;                                 /* Space below title */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);           /* Text shadow for readability */
+}
+
+.forms-container {
+    display: flex;                                       /* Flexbox for form layout */
+    justify-content: center;                             /* Center forms horizontally */
+    gap: 40px;                                          /* Space between forms */
+    flex-wrap: wrap;                                     /* Stack forms on small screens */
+    padding: 20px;                                       /* Padding around container */
+}
+
+.form-card {
+    background: rgba(214, 200, 200, 0.3);               /* Semi-transparent card background */
+    padding: 2rem;                                       /* Padding inside form card */
+    border-radius: 10px;                                 /* Rounded corners */
+    min-width: 350px;                                    /* Minimum form width */
+    max-width: 400px;                                    /* Maximum form width */
+    backdrop-filter: blur(10px);                         /* Subtle glass morphism effect */
+}
+
+.form-card h2 {
+    color: #fffffffa;                                   /* White form title */
+    margin-bottom: 1.5rem;                               /* Space below form title */
+    font-size: 1.8rem;                                   /* Form title size */
+}
+
+/* ===== CONTACT FORM STYLING ===== */
+.contact-form {
+    display: flex;                                       /* Flexbox for form layout */
+    flex-direction: column;                              /* Stack form fields vertically */
+    gap: 15px;                                          /* Space between form fields */
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;                                       /* Comfortable field padding */
+    border: none;                                        /* Remove default borders */
+    border-radius: 5px;                                  /* Rounded field corners */
+    background: rgba(255, 255, 255, 0.9);               /* Semi-transparent white background */
+    font-size: 1rem;                                     /* Readable text size */
+    color: #333;                                         /* Dark text for contrast */
+}
+
+.contact-form textarea {
+    resize: vertical;                                    /* Allow vertical resizing only */
+    min-height: 100px;                                   /* Minimum textarea height */
+}
+
+.contact-form button {
+    margin-top: 10px;                                    /* Space above submit button */
+    cursor: pointer;                                     /* Show hand cursor on hover */
+}
+
+/* ===== FORM FIELD FOCUS EFFECTS ===== */
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: 2px solid #fcfcfc;                         /* White outline when focused */
+    background: white;                                   /* Solid white background when active */
+}
